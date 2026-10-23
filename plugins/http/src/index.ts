@@ -28,7 +28,7 @@ const httpPlugin: PluginType<{
     "metadata": {
         "author": "Vedansh Shetti <vedansh.shetti@gmail.com> - one-format Official Plugin",
         "name": "One-Format Datetime",
-        "version": "1.0.0"
+        "version": "1.1.0"
     },
     tools: {
         codeToFormal: (code: HttpStatusCode) => `HTTP/${code} ${HTTP_STATUS_MESSAGES[code]}`,
