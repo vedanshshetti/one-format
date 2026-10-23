@@ -8,10 +8,12 @@ import type { Plugin } from "./interfaces.js";
 export default function adapter<Tools extends Record<string, any>>(plugin: Plugin<Tools>): {
     getMetadata: () => Plugin<Tools>["metadata"];
     getToolNames: () => string[];
+    hasTool: (tool: string)=>boolean;
 } {
     return {
         getMetadata: ()=>plugin.metadata,
         getToolNames: ()=>Object.keys(plugin.tools),
+        hasTool: (tool: string)=>tool in plugin.tools,
         ...plugin.tools
     };
 };
