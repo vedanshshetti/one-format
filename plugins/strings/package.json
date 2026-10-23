@@ -1,0 +1,22 @@
+{
+  "name": "@one-format/strings-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "http-formatting"
+  ],
+  "license": "EUPL-1.2",
+  "author": "Vedansh Shetti <vedansh.shetti@gmail.com>",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"I didnt feel like writing tests, its just more code to maintain\"",
+    "prepublishOnly": "tsc",
+    "postpublish": "rimraf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "rimraf": "^6.1.3",
+    "typescript": "^7.0.2"
+  }
+}
